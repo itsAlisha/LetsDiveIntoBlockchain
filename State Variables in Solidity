@@ -1,0 +1,13 @@
+// SPDX-License-Identifier: UNLICENSED
+
+pragma solidity >= 0.7.0;
+//Understanding State Variables in Solidity
+contract basic{
+    string public name="Alisha";
+    bool active=false;
+    uint8 length=255;
+    int8 length2=127;
+    int8 length1=-128;
+    bytes4 category="web3";
+    address smartcontractadd=0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
+}
