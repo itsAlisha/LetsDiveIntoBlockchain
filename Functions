@@ -1,0 +1,24 @@
+// SPDX-License-Identifier: Unlicensed
+
+pragma solidity>=0.7.0;
+
+contract functions{
+    uint public value=4;
+    // function add() public pure returns(uint){
+    //     //code
+    //     return 3+15;
+    // }
+    //  function add() public view returns(uint){
+    //     //code
+    //     return value;
+    // }
+     function add() public returns(uint){
+        //code
+        value=9;
+        return value;
+    }
+}
+// keywords :
+// pure : neither get nor edit
+// view : no changes, only retrieve value
+//when state change occurs, don't give pure or view keyword
