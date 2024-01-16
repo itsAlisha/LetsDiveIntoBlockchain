@@ -1,0 +1,24 @@
+// SPDX-License-Identifier: Unlicensed
+
+pragma solidity>=0.7.0;
+
+contract functions{
+    uint public value=4; //state variable : permanently stored in blockchain
+    function sub() public pure returns(uint) { 
+        uint val2=9; //local variable : not saved in storage just a return of function
+        return val2;
+    } 
+    function global() public view returns(uint){
+       // block.coinbase();
+
+      //  return block.timestamp; //1705408341 : universal time : use uint as param
+
+/*Assuming that this timestamp is in seconds:
+GMT: Tuesday, January 16, 2024 12:32:21 PM
+Your time zone: Tuesday, January 16, 2024 6:02:21 PM GMT+05:30
+Relative: A minute ago  */
+
+  //  return msg.sender; //0x78731D3Ca6b7E34aC0F824c42a7cC18A495cabaB : use address as param
+    return msg.sender.balance;  //99999999999996706252 in "wei" = 99.999999999996706252 "ethers"
+    }
+}
